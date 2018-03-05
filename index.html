@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Pizzeria Kołobrzeg</title>
+
+  <style>
+    body {
+      height: 90%;
+      background-color: rgba(204, 161, 64, 0.42);
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    .jumbotron {
+      background-image: url("https://static.pexels.com/photos/365459/pexels-photo-365459.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 0;
+      height: 450px;
+    }
+
+    .jumbotron p {
+      font-size: 200%;
+    }
+
+    .jumbotron>.btn-info {
+      margin-left: 100px;
+    }
+
+    .pizza {
+      height: 100px;
+      padding-top: 15px;
+    }
+
+    .srodek {
+      text-align: center;
+    }
+
+    .card-text {
+      font-size: 20px;
+    }
+
+    .card {
+      background-color: rgba(204, 161, 64, 0);
+      border: none;
+    }
+
+    .przerwa {
+      height: 215px;
+      padding-top: 2em;
+      background-color: rgb(77, 73, 73);
+      color: white;
+    }
+
+    .przerwa1 {
+      height: 35%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <a class="navbar-brand" href="#">Nasze Menu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Strona głowna</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pizza</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Napoje</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kontakt i dowoz</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- JUMBOTRON -->
+  <div class="jumbotron align-middle">
+
+    <div class="container">
+
+      <!-- <img src="https://static.pexels.com/photos/365459/pexels-photo-365459.jpeg" class="rounded mx-auto d-block" alt="pizza"> -->
+      <h1 class="display-4">Pizzeria włoska Kołobrzeg</h1>
+      <p class="lead">Zapraszamy na zapoznanie się z menu naszej restauracji.</p>
+      <hr class="my-4">
+      <p class="lead">
+        <a class="btn btn-info btn-lg mx-auto srodek" href="#" role="button">Przejdz do menu</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row justify-content-md-center przerwa1">
+    <div class="col-lg-3 col-sm-12">
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title"><img class="pizza rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/123/123314.svg" alt="pizza"></h4>
+          <h6 class="card-subtitle mb-2 text-muted srodek">Pyszna Pizza</h6>
+          <p class="card-text srodek">Serwujemy wyśmienitą pizzę, cenioną i chwaloną przez naszych klientow. </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12">
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title"><img class="pizza rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/267/267916.svg" alt="pizza"></h4>
+          <h6 class="card-subtitle mb-2 text-muted srodek">Makarony</h6>
+          <p class="card-text srodek">Nasze menu zawiera dodatkowo spaghetti Bolognese i Carbonara (przyrządzane według receptury prawdziwego włocha ;) ). </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12">
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title"><img class="pizza rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/163/163842.svg" alt="pizza"></h4>
+          <h6 class="card-subtitle mb-2 text-muted srodek">Zajęcia dla dzieci</h6>
+          <p class="card-text srodek">Co 3 tygodnie w sobote o 11.00 organizujemy zajęcia dla młodszych z przyrządzania pizzy. </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-6 col-sm-12 przerwa srodek">
+
+      <h5>KONTAKT</h5>
+      <p>Numer telefonu: 782982620</p>
+      <p>Adres: Ul. Twojej starej 2B</p>
+      <p>Godziny otwarcia: 8.00-19.00</p>
+
+    </div>
+
+    <div class="col-lg-6 col-sm-12 przerwa">
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2335.62538461485!2d15.566450916257557!3d54.16899938015961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47001577a39f863d%3A0xcb9c73b87adf060!2s1+Maja+17%2C+Ko%C5%82obrzeg!5e0!3m2!1spl!2spl!4v1519761213908"
+          width="300" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
