@@ -20,6 +20,10 @@
       width: 100%;
     }
 
+    .w100 {
+      width: 100%;
+    }
+
     .jumbotron {
       background-image: url("https://static.pexels.com/photos/365459/pexels-photo-365459.jpeg");
       background-attachment: fixed;
@@ -67,85 +71,95 @@
       height: 35%;
       margin-bottom: 20px;
     }
+
+    .padt10 {
+      padding-top: 10px;
+    }
+
+    .vb {
+      vertical-align: bottom;
+    }
+
+    .h10 {
+      height: 10%;
+    }
   </style>
 </head>
 
 <body>
 
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-    <a class="navbar-brand" href="#">Nasze Menu</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w100">
+      <a class="navbar-brand" href="#">Nasze Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Strona głowna</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Strona głowna</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pizza</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pizza</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Napoje</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Napoje</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Kontakt i dowoz</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt i dowoz</a>
+          </li>
 
-      </ul>
+        </ul>
 
-    </div>
-  </nav>
-
+      </div>
+    </nav>
+  </div>
   <!-- JUMBOTRON -->
-  <div class="jumbotron align-middle">
+  <div class="row">
+    <div class="jumbotron jumbotron-fluid align-middle w100">
 
-    <div class="container">
+      <div class="container">
 
-      <!-- <img src="https://static.pexels.com/photos/365459/pexels-photo-365459.jpeg" class="rounded mx-auto d-block" alt="pizza"> -->
-      <h1 class="display-4">Pizzeria włoska Kołobrzeg</h1>
-      <p class="lead">Zapraszamy na zapoznanie się z menu naszej restauracji.</p>
-      <hr class="my-4">
-      <p class="lead">
-        <a class="btn btn-info btn-lg mx-auto srodek" href="#" role="button">Przejdz do menu</a>
-      </p>
+        <!-- <img src="https://static.pexels.com/photos/365459/pexels-photo-365459.jpeg" class="rounded mx-auto d-block" alt="pizza"> -->
+        <h1 class="display-4">Pizzeria włoska Kołobrzeg</h1>
+        <p class="lead">Zapraszamy na zapoznanie się z menu naszej restauracji.</p>
+        <hr class="my-4">
+        <p class="lead">
+          <a class="btn btn-info btn-lg mx-auto srodek" href="#" role="button">Przejdz do menu</a>
+        </p>
+      </div>
     </div>
   </div>
-
   <div class="row justify-content-md-center przerwa1">
-    <div class="col-lg-3 col-sm-12">
+    <div class="col-lg-3 col-sm-12 padt10 h10">
       <div class="card">
         <div class="card-block">
           <h4 class="card-title"><img class="pizza rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/123/123314.svg" alt="pizza"></h4>
           <h6 class="card-subtitle mb-2 text-muted srodek">Pyszna Pizza</h6>
           <p class="card-text srodek">Serwujemy wyśmienitą pizzę, cenioną i chwaloną przez naszych klientow. </p>
-
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-sm-12">
+    <div class="col-lg-3 col-sm-12 padt10 h10">
       <div class="card">
         <div class="card-block">
           <h4 class="card-title"><img class="pizza rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/267/267916.svg" alt="pizza"></h4>
           <h6 class="card-subtitle mb-2 text-muted srodek">Makarony</h6>
           <p class="card-text srodek">Nasze menu zawiera dodatkowo spaghetti Bolognese i Carbonara (przyrządzane według receptury prawdziwego włocha ;) ). </p>
-
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-sm-12">
+    <div class="col-lg-3 col-sm-12 padt10 h10">
       <div class="card">
         <div class="card-block">
           <h4 class="card-title"><img class="pizza rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/163/163842.svg" alt="pizza"></h4>
           <h6 class="card-subtitle mb-2 text-muted srodek">Zajęcia dla dzieci</h6>
           <p class="card-text srodek">Co 3 tygodnie w sobote o 11.00 organizujemy zajęcia dla młodszych z przyrządzania pizzy. </p>
-
         </div>
       </div>
     </div>
@@ -154,33 +168,30 @@
   <!-- Sekcja B -->
 
   <div class="row justify-content-md-center przerwa1">
-    <div class="col-lg-3 col-sm-12">
+    <div class="col-lg-3 col-sm-12 padt10 h10">
       <div class="card">
         <div class="card-block">
           <h4 class="card-title"><img class="pizza rounded mx-auto d-block" src="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/truck-512.png" alt="dowoz"></h4>
           <h6 class="card-subtitle mb-2 text-muted srodek">Dowóz</h6>
           <p class="card-text srodek">Pizzę dowozimy w godzinach 13.00-22.00. Jeśli pizza przyjedzie później niż po 20 minutach, zniżka -30% </p>
-
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-sm-12">
+    <div class="col-lg-3 col-sm-12 padt10 h10">
       <div class="card">
         <div class="card-block">
           <h4 class="card-title"><img class="pizza rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/123/123302.svg" alt="sosy"></h4>
           <h6 class="card-subtitle mb-2 text-muted srodek">Sosy</h6>
           <p class="card-text srodek">W ramach dodatków mogą państwo domówic sos czosnkowy, ketchup i sos arabski. Każdy z nich wykonujemy własnoręcznie, według autorskich przepisów.</p>
-
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-sm-12">
+    <div class="col-lg-3 col-sm-12 padt10 h10">
       <div class="card">
         <div class="card-block">
           <h4 class="card-title"><img class="pizza rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/135/135666.svg" alt="napoje"></h4>
           <h6 class="card-subtitle mb-2 text-muted srodek">Napoje</h6>
           <p class="card-text srodek">Posiadamy w menu chłodne, gazowane napoje. Cała lista podana w zakładce "napoje i dodatki".</p>
-
         </div>
       </div>
     </div>
