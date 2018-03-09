@@ -47,6 +47,10 @@
       padding-top: 15px;
     }
 
+    .pizza-button {
+      height: 50px;
+    }
+
     .srodek {
       text-align: center;
     }
@@ -72,8 +76,18 @@
       margin-bottom: 20px;
     }
 
+    .przerwa2 {
+      height: 15%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
     .padt10 {
       padding-top: 10px;
+    }
+
+    .padl15 {
+      padding-left: 25px;
     }
 
     .vb {
@@ -87,14 +101,18 @@
     .gray {
       color: rgb(190, 118, 9);
     }
+
+    td {
+      font-size: 20px;
+    }
   </style>
 </head>
 
 <body>
-
-  <div class="row fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w100">
-      <a class="navbar-brand href="#" ">Nasze Menu</a>
+  <!-- navbar -->
+  <div class="row ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w100 padl15">
+      <a class="navbar-brand" href="#">Nasze Menu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -115,7 +133,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#kontakt">Kontakt i dowoz</a>
+            <a class="nav-link" href="#">Kontakt i dowoz</a>
           </li>
 
         </ul>
@@ -202,158 +220,353 @@
       </div>
     </div>
   </div>
-  
   <hr>
-  
-  <!-- Tabela -->
-  <div id="pizza">
+
+
+  <!-- buttony -->
+  <center>
+    <div class="container przerwa2">
+      <p>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#pizza" role="button" aria-expanded="false" aria-controls="pizza">
+    <img class="pizza-button rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/123/123314.svg" alt="pizza"> Pizza
+  </a>
+        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#napoje" aria-expanded="false" aria-controls="napoje">
+    <img class="pizza-button rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/135/135666.svg" alt="pizza">Napoje
+  </button>
+        <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#makarony" aria-expanded="false" aria-controls="napoje">
+<img class="pizza-button rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/267/267916.svg" alt="pizza">Makarony
+</button>
+        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#dodatki" aria-expanded="false" aria-controls="collapseExample">
+    <img class="pizza-button rounded mx-auto d-block" src="https://image.flaticon.com/icons/svg/123/123302.svg" alt="sosy">Dodatki
+  </button>
+      </p>
+    </div>
+
+
+    <!-- DODATKI -->
+    <div class="collapse" id="dodatki">
+      <center>
+        <h1>DODATKI</h1></center>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-6 padt10 ">
+            <div class="table-responsive-xl padt10">
+              <table class="table table-hover table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nazwa</th>
+                    <th scope="col">Cena</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                      <h5>Sos czosnkowy</h5>
+                    </td>
+                    <td>2zł</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>
+                      <h5>Ketchup</h5>
+                    </td>
+                    <td>2zł</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>
+                      <h5>Sos arabski</h5>
+                    </td>
+                    <td>2zł</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>
+                      <h5>Frytasy 300g</h5>
+                    </td>
+                    <td>8zł</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>
+                      <h5>Skrzydełka z kurczaka 300g</h5>
+                    </td>
+                    <td>12zł</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>
+                      <h5>Kebab Rollo Mega</h5>
+                    </td>
+                    <td>18zł</td>
+                  </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </center>
+  <!-- Tabela pizzy-->
+  <div id="pizza" class="collapse">
     <center>
       <h1>PIZZA</h1></center>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-6 padt10 ">
+          <div class="table-responsive-xl padt10">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nazwa</th>
+                  <th scope="col">Mała (35cm)</th>
+                  <th scope="col">Duża (40 cm)</th>
+                  <th scope="col">Mega (47 cm)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <h5>Margherita</h5>
+                    <p class="gray">sos pomidorowy, ser</p>
+                  </td>
+                  <td>12,90</td>
+                  <td>15,90</td>
+                  <td>22,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <h5>Prosciutto</h5>
+                    <p class="gray">sos pomidorowy, ser, szynka, pieczarki</p>
+                  </td>
+                  <td>13,90</td>
+                  <td>16,90</td>
+                  <td>19,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>
+                    <h5>Funghi</h5>
+                    <p class="gray">sos pomidorowy, ser, pieczarki</p>
+                  </td>
+                  <td>12,90</td>
+                  <td>16,90</td>
+                  <td>22,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>
+                    <h5>Caprese</h5>
+                    <p class="gray">sos pomidorowy, ser typu mozzarella, pomidor po piecu, bazylia po piecu</p>
+                  </td>
+                  <td>14,90</td>
+                  <td>18,90</td>
+                  <td>23,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>
+                    <h5>Nostra</h5>
+                    <p class="gray">sos pomidorowy, ser, salami, czosnek, salami, papryczki jalapeno, sos tabasco</p>
+                  </td>
+                  <td>14,90</td>
+                  <td>17,90</td>
+                  <td>26,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>
+                    <h5>Cazi</h5>
+                    <p class="gray">sos pomidorowy, ser, kiełbasa, szynka, salami, papryka świeża, cebula biała</p>
+                  </td>
+                  <td>15,90</td>
+                  <td>19,90</td>
+                  <td>26,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>
+                    <h5>Hawajska (serio?)</h5>
+                    <p class="gray">sos pomidorowy, ser, szynka, ananas</p>
+                  </td>
+                  <td>18,90</td>
+                  <td>22,90</td>
+                  <td>30,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>
+                    <h5>Carne</h5>
+                    <p class="gray">sos pomidorowy, ser, szynka, salami, kebab, boczek</p>
+                  </td>
+                  <td>20,90</td>
+                  <td>24,90</td>
+                  <td>28,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>
+                    <h5>Swojska</h5>
+                    <p class="gray">sos pomidorowy, ser, czosnek, kiełbasa, ogórek, cebula</p>
+                  </td>
+                  <td>22,90</td>
+                  <td>26,90</td>
+                  <td>32,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>
+                    <h5>Fresco</h5>
+                    <p class="gray">sos pomidorowy, ser, czosnek, boczek, pieczarki, pomidor, cebula</p>
+                  </td>
+                  <td>24,90</td>
+                  <td>29,90</td>
+                  <td>33,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>
+                    <h5>Sycyliana</h5>
+                    <p class="gray">sos pomidorowy, ser, salami, oliwki zielone , papryczka jalapenos</p>
+                  </td>
+                  <td>26,90</td>
+                  <td>30,90</td>
+                  <td>32,90</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>
+                    <h5>Colore</h5>
+                    <p class="gray">sos pomidorowy, ser, czosnek, szynka, pieczarki, papryka świeża</p>
+                  </td>
+                  <td>25,90</td>
+                  <td>29,90</td>
+                  <td>34,90</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-sm-12 col-md-12 padt10 ">
-        <div class="table-responsive-xl padt10">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nazwa</th>
-                <th scope="col">Mała (35cm)</th>
-                <th scope="col">Duża (40 cm)</th>
-                <th scope="col">Mega (47 cm)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>
-                  <h5>Margherita</h5>
-                  <p class="gray">sos pomidorowy, ser</p>
-                </td>
-                <td>12,90</td>
-                <td>15,90</td>
-                <td>22,90</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>
-                  <h5>Prosciutto</h5>
-                  <p class="gray">sos pomidorowy, ser, szynka, pieczarki</p>
-                </td>
-                <td>13,90</td>
-                <td>16,90</td>
-                <td>19,90</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>
-                  <h5>Funghi</h5>
-                  <p class="gray">sos pomidorowy, ser, pieczarki</p>
-                </td>
-                <td>12,90</td>
-                <td>16,90</td>
-                <td>22,90</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>
-                  <h5>Caprese</h5>
-                  <p class="gray">sos pomidorowy, ser typu mozzarella, pomidor po piecu, bazylia po piecu</p>
-                </td>
-                <td>14,90</td>
-                <td>18,90</td>
-                <td>23,90</td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>
-                  <h5>Nostra</h5>
-                  <p class="gray">sos pomidorowy, ser, salami, czosnek, salami, papryczki jalapeno, sos tabasco</p>
-                </td>
-                <td>14,90</td>
-                <td>17,90</td>
-                <td>26,90</td>
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                <td>
-                  <h5>Cazi</h5>
-                  <p class="gray">sos pomidorowy, ser, kiełbasa, szynka, salami, papryka świeża, cebula biała</p>
-                </td>
-                <td>15,90</td>
-                <td>19,90</td>
-                <td>26,90</td>
-              </tr>
-              <tr>
-                <th scope="row">7</th>
-                <td>
-                  <h5>Hawajska (serio?)</h5>
-                  <p class="gray">sos pomidorowy, ser, szynka, ananas</p>
-                </td>
-                <td>18,90</td>
-                <td>22,90</td>
-                <td>30,90</td>
-              </tr>
-              <tr>
-                <th scope="row">8</th>
-                <td>
-                  <h5>Carne</h5>
-                  <p class="gray">sos pomidorowy, ser, szynka, salami, kebab, boczek</p>
-                </td>
-                <td>20,90</td>
-                <td>24,90</td>
-                <td>28,90</td>
-              </tr>
-              <tr>
-                <th scope="row">9</th>
-                <td>
-                  <h5>Swojska</h5>
-                  <p class="gray">sos pomidorowy, ser, czosnek, kiełbasa, ogórek, cebula</p>
-                </td>
-                <td>22,90</td>
-                <td>26,90</td>
-                <td>32,90</td>
-              </tr>
-              <tr>
-                <th scope="row">10</th>
-                <td>
-                  <h5>Fresco</h5>
-                  <p class="gray">sos pomidorowy, ser, czosnek, boczek, pieczarki, pomidor, cebula</p>
-                </td>
-                <td>24,90</td>
-                <td>29,90</td>
-                <td>33,90</td>
-              </tr>
-              <tr>
-                <th scope="row">11</th>
-                <td>
-                  <h5>Sycyliana</h5>
-                  <p class="gray">sos pomidorowy, ser, salami, oliwki zielone , papryczka jalapenos</p>
-                </td>
-                <td>26,90</td>
-                <td>30,90</td>
-                <td>32,90</td>
-              </tr>
-              <tr>
-                <th scope="row">12</th>
-                <td>
-                  <h5>Colore</h5>
-                  <p class="gray">sos pomidorowy, ser, czosnek, szynka, pieczarki, papryka świeża</p>
-                </td>
-                <td>25,90</td>
-                <td>29,90</td>
-                <td>34,90</td>
-              </tr>
-            </tbody>
-          </table>
+
+  <div id="napoje" class="collapse">
+    <center>
+      <h1>NAPOJE</h1></center>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-6 padt10 ">
+          <div class="table-responsive-xl padt10">
+            <table class="table table-hover table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nazwa</th>
+                  <th scope="col">Napój mały 250ml</th>
+                  <th scope="col">Napój duży 500ml</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <h5>Sprite</h5>
+                  </td>
+                  <td>3zł</td>
+                  <td>5zł</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <h5>Mirinda</h5>
+                  </td>
+                  <td>2,8zł</td>
+                  <td>5zł</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>
+                    <h5>Red Bull</h5>
+                  </td>
+                  <td>6zł</td>
+                  <td>brak</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>
+                    <h5>Coca-Cola</h5>
+                  </td>
+                  <td>2zł</td>
+                  <td>5zł</td>
+                </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="makarony" class="collapse">
+    <center>
+      <h1>MAKARONY</h1></center>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-6 padt10 ">
+          <div class="table-responsive-xl padt10">
+            <table class="table table-hover table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nazwa</th>
+                  <th scope="col">Cena (Porcja 400g)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <h5>Carbonara</h5>
+                  </td>
+                  <td>25zł</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <h5>Bolognese</h5>
+                  </td>
+                  <td>23zł</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>
+                    <h5>Pesto</h5>
+                  </td>
+                  <td>28zł</td>
+
+                </tr>
+
+            </table>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="row">
-    <div id="kontakt"> </div>
     <div class="col-lg-6 col-sm-12 przerwa srodek">
 
       <h5>KONTAKT</h5>
@@ -365,7 +578,7 @@
 
     <div class="col-lg-6 col-sm-12 przerwa">
       <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2335.62538461485!2d15.566450916257557!3d54.16899938015961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47001577a39f863d%3A0xcb9c73b87adf060!2s1+Maja+17%2C+Ko%C5%82obrzeg!5e0!3m2!1spl!2spl!4v1519761213908"
-          width="300" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+          width="80%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></center>
     </div>
   </div>
   </div>
